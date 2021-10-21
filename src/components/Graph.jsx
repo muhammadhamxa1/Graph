@@ -1,4 +1,5 @@
 import React from "react";
+import useWindowDimensions from "./Dimension";
 import {
   LineChart,
   Line,
@@ -10,6 +11,7 @@ import {
 } from "recharts";
 
 const Graph = () => {
+  const { height, width } = useWindowDimensions();
   const data = [
     {
       name: "Page A",
@@ -57,13 +59,13 @@ const Graph = () => {
   return (
     <>
       <LineChart
-        width={1250}
-        height={700}
+        width={width}
+        height={height-300}
         data={data}
         margin={{
           top: 5,
-          right: 30,
-          left: 20,
+          right: 150,
+          left: 100,
           bottom: 5,
         }}
       >
