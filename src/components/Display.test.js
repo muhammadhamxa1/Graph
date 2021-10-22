@@ -3,10 +3,8 @@ import ReactDOM from "react-dom";
 import Display from "./Display";
 import { render, fireEvent,cleanup} from "@testing-library/react";
 
-afterEach(() => {
-    jest.restoreAllMocks();
-  });
-afterEach(cleanup);
+
+// afterEach(cleanup);
 
 it("render without crashing", () => {
     const div = document.createElement("div");
