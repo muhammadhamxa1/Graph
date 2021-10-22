@@ -8,8 +8,6 @@ import {
   Row,
   Col,
   Dropdown,
-  Button,
-  ButtonGroup,
 } from "react-bootstrap";
 
 
@@ -32,23 +30,17 @@ const Display = () => {
         <h6 id="top">Filter</h6>
         <Row>
           <Col xl="3" xs="12">
-            <Dropdown as={ButtonGroup}>
-              <Button id="dropdownMenuLink" variant="outline-secondary ">
-                Select Hotels
-              </Button>
+          <Dropdown>
+            <Dropdown.Toggle variant="outline-secondary" id="dropdownMenuLink">
+            Select Hotels
+            </Dropdown.Toggle>
 
-              <Dropdown.Toggle
-                split
-                variant="outline-secondary "
-                id="dropdownMenuLink"
-              />
-
-              <Dropdown.Menu id="dropdownMenuLink">
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           </Col>
           <Col xl="3" xs="12" className="d-flex">
             <h4 id="inputText">From</h4>
