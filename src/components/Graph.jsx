@@ -60,7 +60,7 @@ const Graph = () => {
     <>
       <LineChart
         width={width}
-        height={height-300}
+        height={height - 300}
         data={data}
         margin={{
           top: 5,

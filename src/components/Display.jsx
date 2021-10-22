@@ -57,6 +57,7 @@ const Display = () => {
             <div className="d-flex">
               <h4 id="inputText">From</h4>
               <DatePicker
+                title="fromDate"
                 className="flex-item"
                 selected={from}
                 onChange={(Date) => fromDate(Date)}
@@ -74,6 +75,7 @@ const Display = () => {
             <div className="d-flex">
               <h4 id="inputText">To</h4>
               <DatePicker
+                title="toDate"
                 className="flex-item"
                 selected={to}
                 onChange={(Date) => toDate(Date)}
@@ -96,9 +98,7 @@ const Display = () => {
           </div>
         </div>
         <div className="row">
-          
-            <Graph from={from} to={to} />
-
+          <Graph from={from} to={to} />
         </div>
       </div>
     </>

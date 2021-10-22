@@ -7,20 +7,16 @@
 }
 .flex-item {
   padding: 5px;
-  
-  
 }
 .btn-outline-secondary {
   border: 3px solid black;
   color: black;
   // display: unset;
-  
 }
-.row
-{
+.row {
   --bs-gutter-x: !important;
 }
-#average{
+#average {
   margin-top: 60px;
 }
 #top {
@@ -33,12 +29,11 @@
 
 #inputText {
   margin-top: 5px;
-  padding-right: 10px;  
+  padding-right: 10px;
 }
 .react-datepicker__input-container input {
   border: 3px solid black;
   text-align: center;
-
 }
 .react-datepicker-wrapper {
   width: auto;
