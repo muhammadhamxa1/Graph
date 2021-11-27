@@ -27,7 +27,7 @@ const Display = () => {
   return (
     <>
       <Container id="con">
-        <h6 id="top">Filter</h6>
+        <h6 id="top">Hy Tahoor</h6>
         <Row>
           <Col xl="3" xs="12">
           <Dropdown>
